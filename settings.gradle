@@ -1,10 +1,26 @@
+//dependencyResolutionManagement {
+//    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+//    repositories {
+//        google()
+//        mavenCentral()
+//        jcenter() // Warning: this repository is going to shut down soon
+//    }
+//}
+
+import org.gradle.api.initialization.resolve.RepositoriesMode
+
 dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+
     repositories {
         google()
+//    notice here -------------------------
+        repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+        //    notice here -------------------------
         mavenCentral()
+        maven { url 'https://jitpack.io' }
         jcenter() // Warning: this repository is going to shut down soon
     }
 }
+
 rootProject.name = "LibraryPractice"
 include ':app'

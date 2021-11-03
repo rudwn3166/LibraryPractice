@@ -20,7 +20,7 @@
             android:id="@+id/profileImg"
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:src="@drawable/mushrooms"
+            android:src="@drawable/maple_logo"
 
             app:civ_border_width="3dp"/>
         <TextView
@@ -31,5 +31,19 @@
 
 
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="주 캐릭터"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/characterImg"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/ic_launcher"/>
 
 </LinearLayout>
