@@ -21,6 +21,12 @@ class MainActivity : AppCompatActivity() {
 //        인터넷에 있는 이미지 (https://....)를 이미지 뷰에 바로 대입.
          Glide.with(this).load("https://w.namu.la/s/06a5552f91690e047c583957b3435f164ccb5404a162429278b62e20c5a09fdf72f086cc3c28a9faa6aaf3c42c45e3ed37a6cdb5ea32a1f0a9e966660248e7c582bb43fa917a99784057eb9be95b0edc90ccae6800bc162cc08dcb26f5dde0a1").into(characterImg)
 
+//        전화걸기 버튼 누른->권한확인/전화 연결
+        
+        callBtn.setOnClickListener { 
+            
+//            라이브러리 활용->전화 권한 확인->실제 전화 연결
+        }
 
     }
 }
